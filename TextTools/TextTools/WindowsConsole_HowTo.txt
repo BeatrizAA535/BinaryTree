@@ -1,0 +1,9 @@
+    const short Columns = 40;
+    const short Rows = 20;
+    const short Font_Size = 36;
+    const short Size = Columns * Rows;
+
+    WindowsConsole::SetTitle("Tetris");
+    WindowsConsole::SetScreenBufferSize(Columns, Rows);
+    WindowsConsole::SetWindowSize(Columns, Rows);
+    WindowsConsole::SetFontSize(Font_Size);

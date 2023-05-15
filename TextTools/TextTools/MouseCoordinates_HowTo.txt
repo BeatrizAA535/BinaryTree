@@ -1,0 +1,23 @@
+#include <iostream>
+#include <windows.h>
+#include <stdio.h>
+#include "MouseControls.h"
+
+using namespace std;
+
+int main(void)
+{
+    MouseControls mc;
+    while (1)
+    {
+        mc.ReadMouse();
+        mc.PrintMouseInfo(0, 0);
+        if (mc.buttonClicked == 1)
+        {
+            mc.gotoxy(mc.xy.X, mc.xy.Y);
+            cout << char(219);
+        }
+    }
+
+    return 0;
+}
